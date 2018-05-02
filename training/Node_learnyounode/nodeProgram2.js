@@ -4,7 +4,7 @@
  */
 
  const fs= require('file-system')
- fs.writeFile('file/test.txt','aa \n helloo \n ', function(err){})
+ fs.writeFile('file/test.txt','aa \n helloo \n \n world', function(err){})
 
  fs = require('fs')
  var newLines =  undefined;

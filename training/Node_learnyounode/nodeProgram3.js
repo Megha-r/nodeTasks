@@ -5,7 +5,7 @@ Create a program that prints a list of files in a given directory, filtered by t
   var fs = require('fs')
   var path = require('path')
   
-  fs.readdir(process.argv[2], function (err, list) 
+  fs.readdir(process.argv[2],path.extname(process.argv[1]), function (err, list) 
   {
     list.forEach(function (file)
      {

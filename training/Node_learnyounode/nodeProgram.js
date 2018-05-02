@@ -8,11 +8,11 @@ console.log("Hello World");
   Write a program that accepts one or more numbers as command-line arguments  
   and prints the sum of those numbers to the console (stdout). */
 
-const arr = process.argv;
+const arr = process.argv.length;
 var sum;
-for (var i = 2; i < arr.length; i++) {
+for (var i = 2; i < arr; i++) {
     
-    sum += arr[i]
+    sum += process.argv[i]
   }
 console.log("sum is-",sum);
 
@@ -22,17 +22,17 @@ console.log("sum is-",sum);
 /***************************************  Task 3 ********************************* 
            Write a program that uses a single synchronous filesystem operation to  
           read a file and print the number of newlines (\n) it contains to the */ 
-console
+
 const fs = require('file-system')
-console.log(fs)
+//console.log(fs)
 
-//fs.writeFile('file/test.txt','aa', function(err){})
-
-fs = require('fs');
+//fs.writeFile('file/test.txt','aa', {})
 fs.readFileSync('file/test.txt', 'utf8', function (err,data) {
+ 
   if (err) {
     return console.log("There is an error");
   }
+  
   else{
    
     var newLines = data.toString().split('\n').length - 1
