@@ -1,3 +1,7 @@
+/**************************** Task 6************************************ 
+Create a program that prints a list of files in a given directory, filtered by the extension of the files.
+(With Modules) *********************************************************/ 
+
 var fs = require('fs')
 var path = require('path')
 
@@ -7,7 +11,8 @@ module.exports = function (dir,filterString,callback)
     if (err)
       return callback(err)
 
-    list = list.filter(function (file) {
+    list = list.filter(function (file)
+    {
       return path.extname(file) === '.' + filterStr
     })
 
