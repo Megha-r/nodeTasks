@@ -1,24 +1,24 @@
 //***************************************  Task 1 ********************************* */
 //***************** Print hello world in terminal ********************************* */
 
-//console.log("HELLO WORLD")
+console.log("HELLO WORLD")
 
 
 /***************************************  Task 2 ********************************* 
   Write a program that accepts one or more numbers as command-line arguments  
   and prints the sum of those numbers to the console (stdout). */
 
-// var result= 0;
-// for (var i = 2; i < process.argv.length; i++) {
+var result= 0;
+for (var i = 2; i < process.argv.length; i++) {
     
-//     result += Number(process.argv[i])
-//   }
-//  console.log( result);
+    result += Number(process.argv[i])
+  }
+ console.log( result);
 
 
 /***************************************  Task 3 ********************************* 
-           Write a program that uses a single synchronous filesystem operation to  
-          read a file and print the number of newlines (\n) it contains to the */ 
+   Write a program that uses a single synchronous filesystem operation to  
+   read a file and print the number of newlines (\n) it contains to the */ 
 
 const fs = require('fs') 
 //console.log(fs)
